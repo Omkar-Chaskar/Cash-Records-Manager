@@ -36,10 +36,11 @@ function checkLegality() { //function to check wrong input and calculation
   
  
   if (bill.value > 0) {
+    let newCashGiven = cashGiven.value;
+    let newBill = bill.value;
     
-    
-    if (cashGiven.value >= bill.value) {
-      const amtreturn = cashGiven.value - bill.value;
+    if (Number(newCashGiven) >= Number(newBill) {
+      const amtreturn = newCashGiven - newBill;
       calculateChange(amtreturn);
       tableHide.style.display="block";
     } else {
